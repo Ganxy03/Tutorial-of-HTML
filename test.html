@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Github说明文档</title>
+    <style>
+        /* 页面布局样式 */
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 180px;
+            padding: 20px;
+            background-color: #f7f7f7;
+            overflow: auto;
+            background-image: url(#);
+            background-repeat: no-repeat;
+        }
+
+        .main {
+            flex: 1;
+            padding: 20px;
+            overflow: auto;
+            background-image: url(img/新建项目.png);
+            background-repeat: no-repeat;
+        }
+
+        .topbar {
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #24292e;
+            color: white;
+            padding: 0px 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+
+        /* 副目录样式 */
+        .toc {
+            margin-top: 20px;
+        }
+
+        .toc ul {
+            list-style: none;
+            padding-left: 0px;
+        }
+
+        .toc li {
+            margin-bottom: 5px;
+        }
+
+        .toc a {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        /* 标题小目录样式 */
+        .index {
+            position: fixed;
+            right: 20px;
+            top: 80px;
+            background-color: #f7f7f7;
+            padding: 10px;
+            border: 1px solid #e1e4e8;
+            border-radius: 5px;
+        }
+
+        .index ul {
+            list-style: none;
+            padding-left: 0px;
+        }
+
+        .index li {
+            margin-bottom: 5px;
+        }
+
+        .index a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+
+        /* 文档样式 */
+        h1,
+        h2,
+        h3 {
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+
+        h3 {
+            font-size: 24px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topbar">
+        <div class="logo">Github说明文档</div>
+        <div class="nav">
+            <a href="#">首页</a>
+            <a href="#">文档</a>
+            <a href="#">下载</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <div class="toc">
+                <ul>
+                    <li><a href="#">第一节</a></li>
+                    <li><a href="#">第二节</a></li>
+                    <li><a href="#">第三节</a></li>
+                    <li><a href="#">第四节</a></li>
+                    <li><a href="#">第五节</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <h1>文档</h1>
+            <p>鄙人总结了b站《黑马程序员pink老师》的HTML+CSS的课程文档，各位看官看着看看。</p>
+            <hr>
+            <h2 id="section1">第一节标题</h2>
+            <p>这是第一节的内容。</p>
+            <h2 id="section2">第二节标题</h2>
+            <p>这是第二节的内容。</p>
+            <h2 id="section3">第三节标题</h2>
+            <p>这是第三节的内容。</p>
+            <div style="text-align: center;color: #004481;font-weight: 700;">
+                &copy;2023|Ganxy
+            </div>
+        </div>
+        <div class="index">
+            <h3>目录</h3>
+            <ul>
+                <li><a href="#section1">第一节标题</a></li>
+                <li><a href="#section2">第二节标题</a></li>
+                <li><a href="#section3">第三节标题</a></li>
+                <li><a href="#section4">第四节标题</a></li>
+                <li><a href="#section5">第五节标题</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
